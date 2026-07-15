@@ -1,0 +1,52 @@
+/* ============================================================
+   Hexie Digital — Typography tokens
+   Editorial-modern: oversized grotesque headlines with tight
+   tracking, calm readable body, serif reserved for pull-quotes
+   and article titles, mono for eyebrow labels & numerals.
+   ============================================================ */
+:root {
+  /* --- Families --- */
+  --font-display: 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* --- Weights --- */
+  --fw-light: 300;      /* @kind other */
+  --fw-regular: 400;   /* @kind other */
+  --fw-medium: 500;    /* @kind other */
+  --fw-semibold: 600;  /* @kind other */
+  --fw-bold: 700;      /* @kind other */
+  --fw-extrabold: 800; /* @kind other */
+
+  /* --- Type scale (fluid-friendly rem values) --- */
+  --text-display-2xl: 6rem;    /* 96px — hero / section numerals */
+  --text-display-xl: 4.5rem;   /* 72px */
+  --text-display-lg: 3.5rem;   /* 56px */
+  --text-h1: 2.75rem;          /* 44px */
+  --text-h2: 2.125rem;         /* 34px */
+  --text-h3: 1.5rem;           /* 24px */
+  --text-h4: 1.25rem;          /* 20px */
+  --text-lg: 1.125rem;         /* 18px */
+  --text-base: 1rem;           /* 16px */
+  --text-sm: 0.875rem;         /* 14px */
+  --text-xs: 0.75rem;          /* 12px */
+
+  /* --- Line heights --- */
+  --lh-tight: 1.02;    /* @kind other */
+  --lh-snug: 1.12;     /* @kind other */
+  --lh-normal: 1.5;    /* @kind other */
+  --lh-relaxed: 1.65;  /* @kind other */
+
+  /* --- Letter spacing --- */
+  --tracking-tight: -0.03em;   /* large display @kind other */
+  --tracking-snug: -0.015em;   /* headings @kind other */
+  --tracking-normal: 0em;      /* @kind other */
+  --tracking-wide: 0.02em;     /* @kind other */
+  --tracking-eyebrow: 0.14em;  /* uppercase mono labels @kind other */
+
+  /* ---- Semantic aliases ---- */
+  --heading-family: var(--font-display);
+  --body-family: var(--font-body);
+  --eyebrow-family: var(--font-mono);
+}
