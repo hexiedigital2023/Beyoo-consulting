@@ -1,0 +1,85 @@
+/* ============================================================
+   Hexie Digital — Color tokens
+   Brand mark: indigo + cyan + gold hexagon.
+   A minimalist, editorial palette: warm off-white canvas,
+   near-black ink, three saturated brand colors used as
+   deliberate accents and full-bleed section fields.
+   ============================================================ */
+:root {
+  /* --- Brand primitives (from the Hexie mark) --- */
+  --indigo-900: #1b2a54;
+  --indigo-700: #263c78;
+  --indigo-600: #3551a3; /* mark indigo — primary brand */
+  --indigo-500: #4763bd;
+  --indigo-300: #a6b3df;
+  --indigo-100: #e3e8f6;
+  --indigo-050: #f1f4fb;
+
+  --cyan-700: #007a94;
+  --cyan-600: #009ab9;  /* mark cyan — secondary brand */
+  --cyan-400: #46c0d8;
+  --cyan-200: #b6e6f0;
+  --cyan-050: #ecf9fc;
+
+  --gold-700: #b98d16;
+  --gold-500: #e5b422;  /* mark gold — accent */
+  --gold-300: #f2d478;
+  --gold-100: #fbeec6;
+
+  /* --- Ink & neutrals (warm-grey editorial scale) --- */
+  --ink-900: #14161a;   /* headline / primary text */
+  --ink-700: #33383f;
+  --ink-500: #5b616a;   /* secondary text */
+  --ink-400: #838991;
+  --ink-300: #b4b9c0;
+  --ink-200: #d7dade;
+  --ink-150: #e6e8ea;
+  --ink-100: #eef0f1;
+
+  /* --- Canvas --- */
+  --paper: #f4f3ef;      /* warm off-white — primary background */
+  --paper-2: #eeece6;    /* slightly deeper section band */
+  --white: #ffffff;
+
+  /* --- Section fields (full-bleed brand backgrounds) --- */
+  --field-deep: #133a34;   /* deep evergreen — grounding field */
+  --field-indigo: #3551a3;
+  --field-cyan: #009ab9;
+  --field-gold: #e5b422;
+
+  /* --- Semantic status --- */
+  --success: #2f8f5b;
+  --warning: #c8891a;
+  --danger:  #c0392f;
+  --info:    #009ab9;
+
+  /* ============================================================
+     Semantic aliases — reference THESE in components
+     ============================================================ */
+  --bg-canvas: var(--paper);
+  --bg-raised: var(--white);
+  --bg-sunken: var(--paper-2);
+  --bg-inverse: var(--ink-900);
+
+  --surface-card: var(--white);
+  --surface-muted: var(--paper-2);
+
+  --text-primary: var(--ink-900);
+  --text-secondary: var(--ink-500);
+  --text-muted: var(--ink-400);
+  --text-inverse: var(--paper);
+  --text-brand: var(--indigo-600);
+  --text-link: var(--indigo-600);
+  --text-link-hover: var(--indigo-900);
+
+  --border-subtle: var(--ink-150);
+  --border-default: var(--ink-200);
+  --border-strong: var(--ink-900);
+
+  --brand-primary: var(--indigo-600);
+  --brand-primary-hover: var(--indigo-700);
+  --brand-secondary: var(--cyan-600);
+  --brand-accent: var(--gold-500);
+
+  --focus-ring: var(--cyan-600);
+}
