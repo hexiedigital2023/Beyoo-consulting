@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — BEYOO Consulting</title>
+<meta name="description" content="Tell BEYOO Consulting where you want to grow. An advisor replies within one business day — in English, French, or Mandarin.">
+<link rel="icon" href="assets/hexie-mark.png">
+<link rel="stylesheet" href="assets/design-system/styles.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="hx-nav">
+  <div class="hx-nav__inner">
+    <a href="index.html" class="hx-nav__brand">
+      <span class="hx-nav__brand-bar"></span>
+      <span class="hx-nav__brand-text">BEYOO<span class="hx-nav__brand-sub"> Consulting</span></span>
+    </a>
+    <button class="hx-nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <nav class="hx-nav__links">
+      <a href="index.html" class="hx-nav__link">Home</a>
+      <a href="services.html" class="hx-nav__link">What we do</a>
+      <a href="case-studies.html" class="hx-nav__link">Case studies</a>
+      <a href="team.html" class="hx-nav__link">Team</a>
+      <a href="contact.html" class="hx-nav__link is-active">Contact</a>
+      <a href="contact.html" class="hx-btn hx-btn--sm hx-btn--primary">Book a consultation</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hx-container" style="padding-top:72px; padding-bottom:96px;">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start;">
+
+    <div>
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px;">
+        <span style="width:26px; height:6px; background:var(--gold-500); border-radius:2px;"></span>
+        <span style="font-family:var(--font-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--text-secondary);">Contact</span>
+      </div>
+      <h1 style="margin:0; font-family:var(--font-display); font-weight:500; font-size:clamp(40px,5.5vw,68px); line-height:1.03; letter-spacing:-.03em; max-width:14ch; color:var(--text-primary);">Let's build your bridge across the Pacific.</h1>
+      <p style="margin-top:24px; max-width:42ch; font-size:18px; line-height:1.6; color:var(--text-secondary);">Tell us where you want to grow. A BEYOO advisor will reply within one business day — in English, French, or Mandarin.</p>
+
+      <div style="margin-top:48px; padding:28px; border:1px solid var(--border-default); border-radius:var(--radius-md); background:var(--white);">
+        <div style="font-family:var(--font-display); font-weight:600; font-size:18px; color:var(--text-primary);">Prefer to talk it through?</div>
+        <p style="margin:8px 0 20px; font-size:15px; color:var(--text-secondary); line-height:1.55;">Book a 30-minute consultation directly on our calendar.</p>
+        <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="hx-btn hx-btn--md hx-btn--secondary">Book a time</a>
+      </div>
+
+      <div style="margin-top:40px; display:flex; flex-direction:column; gap:24px;">
+        <div style="border-top:1px solid var(--border-default); padding-top:16px;">
+          <div style="font-family:var(--font-display); font-weight:600; font-size:18px;">Vancouver</div>
+          <div style="font-size:15px; color:var(--text-secondary); margin-top:4px;">1055 West Hastings St</div>
+          <div style="font-family:var(--font-mono); font-size:13px; color:var(--text-muted); margin-top:4px;">+1 (604) 000-0000</div>
+        </div>
+        <div style="border-top:1px solid var(--border-default); padding-top:16px;">
+          <div style="font-family:var(--font-display); font-weight:600; font-size:18px;">Shanghai</div>
+          <div style="font-size:15px; color:var(--text-secondary); margin-top:4px;">100 Century Avenue</div>
+          <div style="font-family:var(--font-mono); font-size:13px; color:var(--text-muted); margin-top:4px;">+86 21 0000 0000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hx-card hx-card--raised hx-card--padding-lg" data-contact-card>
+      <div data-thank-you hidden style="padding:40px 8px; text-align:center;">
+        <h3 style="margin:0 0 10px; font-family:var(--font-display); font-weight:600; font-size:24px; color:var(--text-primary);">Thank you<span data-thank-name></span>.</h3>
+        <p style="margin:0 0 24px; color:var(--text-secondary); font-size:16px;">Your inquiry is on its way. We'll be in touch within one business day.</p>
+        <button type="button" class="hx-btn hx-btn--md hx-btn--secondary" data-reset>Send another</button>
+      </div>
+
+      <form id="contact-form" style="display:flex; flex-direction:column; gap:18px;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <label class="hx-field">
+            <span class="hx-field__label">Full name</span>
+            <input id="contact-name" class="hx-field__control" type="text" name="name" placeholder="Jamie Chen" required>
+          </label>
+          <label class="hx-field">
+            <span class="hx-field__label">Work email</span>
+            <input class="hx-field__control" type="email" name="email" placeholder="you@company.com" required>
+          </label>
+        </div>
+        <label class="hx-field">
+          <span class="hx-field__label">Company</span>
+          <input class="hx-field__control" type="text" name="company" placeholder="Northline Goods Inc.">
+        </label>
+        <label class="hx-field">
+          <span class="hx-field__label">Where do you want to grow?</span>
+          <span class="hx-field__select-wrap">
+            <select class="hx-field__control" name="market" required>
+              <option value="" disabled selected>Choose a direction</option>
+              <option>Enter the Canadian or US market</option>
+              <option>Enter the Chinese market</option>
+              <option>Rebrand for a new market</option>
+              <option>Find retail or distribution partners</option>
+            </select>
+          </span>
+        </label>
+        <label class="hx-field">
+          <span class="hx-field__label">How can we help?</span>
+          <textarea class="hx-field__control" name="message" rows="4" placeholder="Tell us about your goals and timeline…"></textarea>
+        </label>
+        <button type="submit" class="hx-btn hx-btn--lg hx-btn--primary hx-btn--full">Send inquiry</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="hx-footer">
+  <div class="hx-footer__inner">
+    <div class="hx-footer__grid">
+      <div>
+        <div class="hx-footer__brand-row">
+          <span class="hx-nav__brand-bar"></span>
+          <span class="hx-nav__brand-text">BEYOO<span class="hx-nav__brand-sub"> Consulting</span></span>
+        </div>
+        <p class="hx-footer__desc">Your brand's cultural compass across the Pacific — bridging Canada, the United States, and China.</p>
+      </div>
+      <div>
+        <div class="hx-footer__heading">Company</div>
+        <ul class="hx-footer__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="case-studies.html">Case studies</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="hx-footer__heading">Services</div>
+        <ul class="hx-footer__list">
+          <li><a href="services.html">Brand strategy</a></li>
+          <li><a href="services.html">Cultural localization</a></li>
+          <li><a href="services.html">Market entry &amp; retail</a></li>
+          <li><a href="services.html">Digital &amp; e-commerce</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="hx-footer__heading">Offices</div>
+        <ul class="hx-footer__list">
+          <li><span>Vancouver</span></li>
+          <li><span>New York</span></li>
+          <li><span>Shanghai</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hx-footer__bottom">
+      <span>© 2026 BEYOO Consulting</span>
+      <span>Vancouver ↔ Shanghai</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
